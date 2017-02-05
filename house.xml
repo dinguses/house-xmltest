@@ -1,0 +1,2026 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<house>
+	<rooms>
+		<room id="0" name="living room">
+			<adjacentrooms>
+				<id>1</id>
+				<id>2</id>	
+				<id>6</id>						
+			</adjacentrooms>
+			<states>
+				<state>
+					<image>lr</image>
+					<description>This is where you might entertain friends...if you had any. The room is dimly lit by a lamp and the weak, jittering light of the fireplace. You see a comfy, albeit slightly moldy, arm chair facing the fireplace; your phone atop a spindly table; and a bookcase full of books you've skimmed. There is the front door, a window, the door to the kitchen, and a staircase leading to the second floor.</description>
+					<prerequisites>
+						<prerequisite>
+							<item>3</item>
+							<itemstate>0</itemstate>
+						</prerequisite>
+						<prerequisite>
+							<item>7</item>
+							<itemstate>0</itemstate>
+						</prerequisite>
+						<prerequisite>
+							<item>15</item>
+							<itemstate>0</itemstate>
+						</prerequisite>
+					</prerequisites>
+				</state>
+				<state>
+					<image>lr2</image>
+					<description>This is where you might entertain friends...if you had any. The room is dimly lit by a lamp and the weak, jittering light of the fireplace. You see a comfy, albeit slightly moldy, arm chair facing the fireplace; your phone atop a spindly table; and a bookcase full of books you've skimmed. There is the front door, a window, the door to the kitchen, and a staircase leading to the second floor.</description>
+					<prerequisites>
+						<prerequisite>
+							<item>3</item>
+							<itemstate>1</itemstate>
+						</prerequisite>
+						<prerequisite>
+							<item>7</item>
+							<itemstate>0</itemstate>
+						</prerequisite>
+						<prerequisite>
+							<item>15</item>
+							<itemstate>0</itemstate>
+						</prerequisite>
+					</prerequisites>
+				</state>
+				<state>
+					<image>lr5</image>
+					<description>This is where you might entertain friends...if you had any. The room is dimly lit by a lamp and the weak, jittering light of the fireplace. You see a comfy, albeit slightly moldy, arm chair facing the fireplace; your phone atop a spindly table; and a bookcase full of books you've skimmed. There is the front door, a window, the door to the kitchen, and a staircase leading to the second floor.</description>
+					<prerequisites>
+						<prerequisite>
+							<item>3</item>
+							<itemstate>0</itemstate>
+						</prerequisite>
+						<prerequisite>
+							<item>7</item>
+							<itemstate>0</itemstate>
+						</prerequisite>
+						<prerequisite>
+							<item>15</item>
+							<itemstate>1</itemstate>
+						</prerequisite>
+					</prerequisites>
+				</state>
+				<state>
+					<image>lr6</image>
+					<description>This is where you might entertain friends...if you had any. The room is dimly lit by a lamp and the weak, jittering light of the fireplace. You see a comfy, albeit slightly moldy, arm chair facing the fireplace; your phone atop a spindly table; and a bookcase full of books you've skimmed. There is the front door, a window, the door to the kitchen, and a staircase leading to the second floor.</description>
+					<prerequisites>
+						<prerequisite>
+							<item>3</item>
+							<itemstate>1</itemstate>
+						</prerequisite>
+						<prerequisite>
+							<item>7</item>
+							<itemstate>0</itemstate>
+						</prerequisite>
+						<prerequisite>
+							<item>15</item>
+							<itemstate>1</itemstate>
+						</prerequisite>
+					</prerequisites>
+				</state>
+				<state>
+					<image>lr3</image>
+					<description>This is where you might entertain friends...if you had any. The room is dimly lit by a lamp and the weak, jittering light of the fireplace. You see a comfy, albeit slightly moldy, arm chair facing the fireplace; your phone atop a spindly table; and a bookcase full of books you've skimmed. There is the front door, a window, the door to the kitchen, and a staircase leading to the second floor.</description>
+					<prerequisites>
+						<prerequisite>
+							<item>3</item>
+							<itemstate>1</itemstate>
+						</prerequisite>
+						<prerequisite>
+							<item>7</item>
+							<itemstate>1</itemstate>
+						</prerequisite>
+						<prerequisite>
+							<item>15</item>
+							<itemstate>0</itemstate>
+						</prerequisite>
+					</prerequisites>
+				</state>
+				<state>
+					<image>lr4</image>
+					<description>This is where you might entertain friends...if you had any. The room is dimly lit by a lamp and the weak, jittering light of the fireplace. You see a comfy, albeit slightly moldy, arm chair facing the fireplace; your phone atop a spindly table; and a bookcase full of books you've skimmed. There is the front door, a window, the door to the kitchen, and a staircase leading to the second floor.</description>
+					<prerequisites>
+						<prerequisite>
+							<item>3</item>
+							<itemstate>0</itemstate>
+						</prerequisite>
+						<prerequisite>
+							<item>7</item>
+							<itemstate>1</itemstate>
+						</prerequisite>
+						<prerequisite>
+							<item>15</item>
+							<itemstate>0</itemstate>
+						</prerequisite>
+					</prerequisites>
+				</state>
+				<state>
+					<image>lr7</image>
+					<description>This is where you might entertain friends...if you had any. The room is dimly lit by a lamp and the weak, jittering light of the fireplace. You see a comfy, albeit slightly moldy, arm chair facing the fireplace; your phone atop a spindly table; and a bookcase full of books you've skimmed. There is the front door, a window, the door to the kitchen, and a staircase leading to the second floor.</description>
+					<prerequisites>
+						<prerequisite>
+							<item>3</item>
+							<itemstate>1</itemstate>
+						</prerequisite>
+						<prerequisite>
+							<item>7</item>
+							<itemstate>1</itemstate>
+						</prerequisite>
+						<prerequisite>
+							<item>15</item>
+							<itemstate>1</itemstate>
+						</prerequisite>
+					</prerequisites>
+				</state>
+				<state>
+					<image>lr8</image>
+					<description>This is where you might entertain friends...if you had any. The room is dimly lit by a lamp and the weak, jittering light of the fireplace. You see a comfy, albeit slightly moldy, arm chair facing the fireplace; your phone atop a spindly table; and a bookcase full of books you've skimmed. There is the front door, a window, the door to the kitchen, and a staircase leading to the second floor.</description>
+					<prerequisites>
+						<prerequisite>
+							<item>3</item>
+							<itemstate>0</itemstate>
+						</prerequisite>
+						<prerequisite>
+							<item>7</item>
+							<itemstate>1</itemstate>
+						</prerequisite>
+						<prerequisite>
+							<item>15</item>
+							<itemstate>1</itemstate>
+						</prerequisite>
+					</prerequisites>
+				</state>
+			</states>
+			<items>
+				<item name="phone">
+					<index>1</index>
+					<states>
+						<state>
+							<image>Phone</image>
+							<description>Your beige connection to civilization is looking awfully inadequate right now. You know there is a mostly empty address book in a drawer in the table the phone sits upon.</description>
+							<get>Unplugging it from the wall might sort of defeat the purpose. Might be best to leave it here.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+						<state>
+							<image>phone2</image>
+							<description>Your beige connection to civilization is looking awfully inadequate right now. You can see your address book in the open drawer of the table that the phone sits on.</description>
+							<get>Unplugging it from the wall might sort of defeat the purpose. Might be best to leave it here.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="window">
+					<index>2</index>
+					<states>
+						<state>
+							<image />
+							<description>A window that yawns a view to the dark front yard. You can just make out your mailbox under a flickering street lamp.</description>
+							<get>Nah</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="arm chair">
+					<index>3</index>
+					<states>
+						<state>
+							<image>armchair</image>
+							<description>Almost bursting at the seams from years of your curvy physique pressing upon it.</description>
+							<get>Then you would be holding the chair instead of it you holding you! But, no.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+						<state>
+							<image>armchair2</image>
+							<description>Now it's in front of the door!</description>
+							<get>Then you would be holding the chair instead of it you holding you! But, no.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Painting">
+					<index>4</index>
+					<states>
+						<state>
+							<image>painting</image>
+							<description>Looks dumb</description>
+							<get>It probably looks better up there.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Peephole">
+					<index>5</index>
+					<states>
+						<state>
+							<image />
+							<description>Oh wow, looks like somebody's outside!</description>
+							<get>It's too little!</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Bookcase">
+					<index>6</index>
+					<states>
+						<state>
+							<image />
+							<description>So that you can pretend you're smarter to yourself, even though you know you've read none of them. You see such titles as: </description>
+							<get>While each book is pretty light, the whole bookcase weighs quite a bit. Maybe stick to one book at a time, JFK.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Fireplace">
+					<index>7</index>
+					<states>
+						<state>
+							<image />
+							<description>A warm fire roars cozily in the old brick fireplace.</description>
+							<get>Are you looking for a one-way trip to the burn unit again?</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+						<state>
+							<image />
+							<description>Secret passage open.</description>
+							<get>Are you looking for a one-way trip to the burn unit again?</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Front Door">
+					<index>8</index>
+					<states>
+						<state>
+							<image />
+							<description>Its dark wood looms ominously. There is a peep hole that you never thought you'd need to use.</description>
+							<get>Nah</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Staircase">
+					<index>9</index>
+					<states>
+						<state>
+							<image>staircase</image>
+							<description>A plain white banister and stairs lead up to the second floor.</description>
+							<get>Nah</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Address Book">
+					<index>10</index>
+					<states>
+						<state>
+							<image>Phone</image>
+							<description>I don't see that.</description>
+							<get>Nah</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+						<state>
+							<image>phone3</image>
+							<description>The book contains these entries (All numbers are Speed-dial):
+Paulie's Pizza..................1<br />
+Ms. Jones from Next Door........2<br />
+Phillip Glean's Free Screams....3<br />
+911.............................4
+</description>
+							<get>Nah</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="1">
+					<index>11</index>
+					<states>
+						<state>
+							<image />
+							<description />
+							<get />
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+						<state>
+							<image />
+							<description />
+							<get />
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="2">
+					<index>12</index>
+					<states>
+						<state>
+							<image />
+							<description />
+							<get />
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+						<state>
+							<image />
+							<description />
+							<get />
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="3">
+					<index>13</index>
+					<states>
+						<state>
+							<image />
+							<description />
+							<get />
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+						<state>
+							<image />
+							<description />
+							<get />
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="4">
+					<index>14</index>
+					<states>
+						<state>
+							<image />
+							<description />
+							<get />
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+						<state>
+							<image />
+							<description />
+							<get />
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="lighter fluid">
+					<index>15</index>
+					<states>
+						<state>
+							<image />
+							<description>For fires!</description>
+							<get>You swipe it like the fucking hamburgler.</get>
+							<gettable>1</gettable>
+							<actions>
+							</actions>
+						</state>
+						<state>
+							<image />
+							<description />
+							<get>I think you already got it PAL</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="drawer">
+					<index>16</index>
+					<states>
+						<state>
+							<image>Phone</image>
+							<description>The Drawer. It's closed.</description>
+							<get>No</get>
+							<gettable>0</gettable>
+							<actions>
+								<action>
+									<item>10</item>
+									<itemstate>0</itemstate>
+								</action>
+							</actions>
+						</state>
+						<state>
+							<image>phone2</image>
+							<description>The Drawer. It's open.</description>
+							<get>No</get>
+							<gettable>0</gettable>
+							<actions>
+								<action>
+									<item>10</item>
+									<itemstate>1</itemstate>
+								</action>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Book 1">
+					<index>17</index>
+					<states>
+						<state>
+							<image />
+							<description>Looks like a book</description>
+							<get>no</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+						<state>
+							<image />
+							<description>WOW YOU OPENED THE PAPSSAGE WITH THIS OOOK.</description>
+							<get>You already pulled it and did the addams family thing ya big doof.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Book 2">
+					<index>18</index>
+					<states>
+						<state>
+							<image />
+							<description>Looks like a book</description>
+							<get>no</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Book 3">
+					<index>19</index>
+					<states>
+						<state>
+							<image />
+							<description>Looks like a book</description>
+							<get>no</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Book 4">
+					<index>20</index>
+					<states>
+						<state>
+							<image />
+							<description>Looks like a book</description>
+							<get>no</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="lamp">
+					<index>21</index>
+					<states>
+						<state>
+							<image>lamp</image>
+							<description>Shines bright.</description>
+							<get>no</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="kitchen door">
+					<index>59</index>
+					<states>
+						<state>
+							<image />
+							<description>Door to the Kitchen</description>
+							<get>no</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+			</items>			
+		</room>
+		<room id="1" name="Kitchen">
+			<adjacentrooms>
+				<id>0</id>
+				<id>5</id>
+				<id>7</id>				
+			</adjacentrooms>
+			<states>
+				<state>
+					<image>k</image>
+					<description>This is where you push food into your mouth, sometimes after cooking it.  Stains and spills dot the floor, walls, and surfaces. In the center of the room is a counter where you usually prepare your food. On it rests a toaster, a blender, and a knife block. Standard kitchen appliances fill the room, like your refrigerator, sink, and a stovetop/oven. There is a door to the living room and a door leading to the back yard.</description>
+					<prerequisites>
+					</prerequisites>
+				</state>
+			</states>
+			<items>
+				<item name="Knife Block">
+					<index>22</index>
+					<states>
+						<state>
+							<image />
+							<description>A knife block with 3 knives.</description>
+							<get>Can't get the whole block, dummy.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+						<state>
+							<image />
+							<description>A knife block with 2 knives.</description>
+							<get>Can't get the whole block, dummy.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Knife">
+					<index>23</index>
+					<states>
+						<state>
+							<image />
+							<description>A knife.</description>
+							<get>You nab the stab.</get>
+							<gettable>1</gettable>
+							<actions>
+							</actions>
+						</state>
+						<state>
+							<image />
+							<description>I don't think it's in the room anymore</description>
+							<get>You already nabbed the stab.</get>
+							<gettable>0</gettable>
+							<actions>
+								<action>
+									<item>22</item>
+									<itemstate>1</itemstate>
+								</action>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Back Door">
+					<index>24</index>
+					<states>
+						<state>
+							<image />
+							<description>There are tiny slivers of grass illuminated by the light coming through the kitchen windows and doors. Beyond is impenetrable darkness.</description>
+							<get>No</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Refrigerator">
+					<index>25</index>
+					<states>
+						<state>
+							<image />
+							<description>A plain, white, food-cooling box. A smiley-face magnet pins an "A+" math test to the front.</description>
+							<get>Just because it's running, doesn't mean you have to go catch it. HA HA.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+						<state>
+							<image />
+							<description>The fridge door is open.</description>
+							<get>Just because it's running, doesn't mean you have to go catch it. HA HA.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Freezer">
+					<index>26</index>
+					<states>
+						<state>
+							<image />
+							<description>Ah, the slightly colder sibling of the fridge. But I bet you knew that already.</description>
+							<get>Just because it's running, doesn't mean you have to go catch it. HA HA.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+						<state>
+							<image />
+							<description>The freezer door is open.</description>
+							<get>Just because it's running, doesn't mean you have to go catch it. HA HA.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Ice Cube Trays">
+					<index>27</index>
+					<states>
+						<state>
+							<image />
+							<description />
+							<get />
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+						<state>
+							<image />
+							<description>I think you used these once to make your favorite mixed drink, water on the rocks.</description>
+							<get>You're not feeling particularly thirsty.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Orange Juice">
+					<index>28</index>
+					<states>
+						<state>
+							<image />
+							<description />
+							<get />
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+						<state>
+							<image />
+							<description>10% more orange!</description>
+							<get>You grab the orange juice and shove it in your pocket. The cold metal cannister presses against your leg and for a moment, you feel alive.</get>
+							<gettable>1</gettable>
+							<actions>
+							</actions>
+						</state>
+						<state>
+							<image />
+							<description />
+							<get />
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Sink">
+					<index>29</index>
+					<states>
+						<state>
+							<image />
+							<description>Slightly grimy and mostly slimy. There's a cabinet under it.</description>
+							<get>It's bolted to the wall.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Cabinet">
+					<index>30</index>
+					<states>
+						<state>
+							<image />
+							<description>It's the cabinet under the sink! And it's closed!</description>
+							<get>NO!</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+						<state>
+							<image />
+							<description>It's the cabinet under the sink! And it's open!</description>
+							<get>NO!</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Bucket">
+					<index>31</index>
+					<states>
+						<state>
+							<image />
+							<description />
+							<get />
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+						<state>
+							<image />
+							<description>Bucket-y</description>
+							<get>You grab the bucket.</get>
+							<gettable>1</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Stove">
+					<index>32</index>
+					<states>
+						<state>
+							<image />
+							<description>Where some of your most impressive water boiling has taken place. Also some of your most impressive ignoring burns to look cool (it's not cool). There's a lighter sitting on the top.</description>
+							<get>No</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Oven">
+					<index>33</index>
+					<states>
+						<state>
+							<image />
+							<description>Where some of your REALLY impressive water boiling has taken place.</description>
+							<get>In? Not a good idea my friend.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Toaster">
+					<index>34</index>
+					<states>
+						<state>
+							<image />
+							<description>Bread goes in, toast comes out. You could call it magic, but you would be wrong. You're often wrong.</description>
+							<get>You bash the toaster against the counter, separating it into many pieces.  None of them seem particularly useful except for the spring, which you pocket.</get>
+							<gettable>1</gettable>
+							<actions>
+							</actions>
+						</state>
+						<state>
+							<image />
+							<description>Rest in pieces.</description>
+							<get>I think you already grabbed the useful bits.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Blender">
+					<index>35</index>
+					<states>
+						<state>
+							<image />
+							<description>Most recently used for impromptu bartending. Residue of Mountain Dew and Malibu covers the inside.</description>
+							<get>NO</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Counter">
+					<index>36</index>
+					<states>
+						<state>
+							<image />
+							<description>You know it's not illegal to clean up every once in awhile, right? Anyway, it's a big linoleum countertop. On it is a toaster, a blender, and a knife block.</description>
+							<get>NO</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Staircase">
+					<index>37</index>
+					<states>
+						<state>
+							<image />
+							<description>They lead to the basement.</description>
+							<get>NO</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Lighter">
+					<index>43</index>
+					<states>
+						<state>
+							<image />
+							<description>For lighting stuff, ya know?</description>
+							<get>This might come in handy for lighting stuff.</get>
+							<gettable>1</gettable>
+							<actions>
+							</actions>
+						</state>
+						<state>
+							<image />
+							<description />
+							<get>Already got it.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+			</items>	
+		</room>
+		<room id="2" name="Hallway">
+			<adjacentrooms>
+				<id>0</id>
+				<id>3</id>
+				<id>4</id>				
+			</adjacentrooms>
+			<states>
+				<state>
+					<image>hw</image>
+					<description>To your left, the stairs to the first floor stretch down, ending in the door you'd like to get as far away from as possible. You see doors to the bathroom and bedroom. And a gas mask.</description>
+					<prerequisites>
+						<prerequisite>
+							<item>41</item>
+							<itemstate>0</itemstate>
+						</prerequisite>
+					</prerequisites>
+				</state>
+				<state>
+					<image>hw2</image>
+					<description>To your left, the stairs to the first floor stretch down, ending in the door you'd like to get as far away from as possible. You see doors to the bathroom and bedroom.</description>
+					<prerequisites>
+						<prerequisite>
+							<item>41</item>
+							<itemstate>1</itemstate>
+						</prerequisite>
+					</prerequisites>
+				</state>
+			</states>
+			<items>
+				<item name="Staircase">
+					<index>38</index>
+					<states>
+						<state>
+							<image />
+							<description>They lead downstairs.</description>
+							<get>NO</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Bedroom Door">
+					<index>39</index>
+					<states>
+						<state>
+							<image />
+							<description>The door to your bedroom.</description>
+							<get>NO</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Bathroom Door">
+					<index>40</index>
+					<states>
+						<state>
+							<image />
+							<description>The door to your bathroom.</description>
+							<get>NO</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Gas Mask">
+					<index>41</index>
+					<states>
+						<state>
+							<image />
+							<description>It's a gas mask!</description>
+							<get>You grab the gassy boy.</get>
+							<gettable>1</gettable>
+							<actions>
+							</actions>
+						</state>
+						<state>
+							<image />
+							<description />
+							<get>You already grabbed the gassy boy.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+			</items>
+		</room>
+		<room id="3" name="Bathroom">
+			<adjacentrooms>
+				<id>2</id>
+			</adjacentrooms>
+			<states>
+				<state>
+					<image>br</image>
+					<description>Where you do all your poops!</description>
+					<prerequisites>
+						<prerequisite>
+							<item>46</item>
+							<itemstate>0</itemstate>
+						</prerequisite>
+						<prerequisite>
+							<item>49</item>
+							<itemstate>0</itemstate>
+						</prerequisite>
+					</prerequisites>
+				</state>
+				<state>
+					<image>br2</image>
+					<description>Where you do all your poops!</description>
+					<prerequisites>
+						<prerequisite>
+							<item>46</item>
+							<itemstate>1</itemstate>
+						</prerequisite>
+						<prerequisite>
+							<item>49</item>
+							<itemstate>0</itemstate>
+						</prerequisite>
+					</prerequisites>
+				</state>
+				<state>
+					<image>br3</image>
+					<description>Where you do all your poops!</description>
+					<prerequisites>
+						<prerequisite>
+							<item>46</item>
+							<itemstate>0</itemstate>
+						</prerequisite>
+						<prerequisite>
+							<item>49</item>
+							<itemstate>1</itemstate>
+						</prerequisite>
+					</prerequisites>
+				</state>
+				<state>
+					<image>br4</image>
+					<description>Where you do all your poops!</description>
+					<prerequisites>
+						<prerequisite>
+							<item>46</item>
+							<itemstate>1</itemstate>
+						</prerequisite>
+						<prerequisite>
+							<item>49</item>
+							<itemstate>1</itemstate>
+						</prerequisite>
+					</prerequisites>
+				</state>
+			</states>
+			<items>
+				<item name="Door">
+					<index>42</index>
+					<states>
+						<state>
+							<image />
+							<description>It's there so nobody can see you pooping.</description>
+							<get>NO</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Sink">
+					<index>44</index>
+					<states>
+						<state>
+							<image>sink</image>
+							<description>Nice. This baby's vintage. Faux-chrome, porcelain, uh, rustic...exterior...got some pipes there...functions without issue, mostly...look it's a sink. It's a fucking sink.</description>
+							<get>NO</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+						<state>
+							<image>sink2</image>
+							<description>Nice. This baby's vintage. Faux-chrome, porcelain, uh, rustic...exterior...got some pipes there...functions without issue, mostly...look it's a sink. It's a fucking sink.</description>
+							<get>NO</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+						<state>
+							<image>sink3</image>
+							<description>Nice. This baby's vintage. Faux-chrome, porcelain, uh, rustic...exterior...got some pipes there...functions without issue, mostly...look it's a sink. It's a fucking sink.</description>
+							<get>NO</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Toilet">
+					<index>45</index>
+					<states>
+						<state>
+							<image>toilet</image>
+							<description>This is where the magic happens.</description>
+							<get>You reach around in the water for a few seconds. Nothing of interest.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+						<state>
+							<image>toilet2</image>
+							<description>This is where the magic happens.</description>
+							<get>You reach around in the water for a few seconds. Nothing of interest.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Cabinet">
+					<index>46</index>
+					<states>
+						<state>
+							<image />
+							<description>It's a cabinet! The door is closed.</description>
+							<get>Nah</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+						<state>
+							<image />
+							<description>It's a cabinet! The door is open.</description>
+							<get>Nah</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Bleach">
+					<index>47</index>
+					<states>
+						<state>
+							<image />
+							<description>Don't drink it!</description>
+							<get>You grab the bottle of bleach.</get>
+							<gettable>1</gettable>
+							<actions>
+							</actions>
+						</state>
+						<state>
+							<image />
+							<description />
+							<get>You already grabbed that.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Shower">
+					<index>48</index>
+					<states>
+						<state>
+							<image />
+							<description>This is where you would shower if you showered. You know, maybe you deserve this.</description>
+							<get>No</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Curtain">
+					<index>49</index>
+					<states>
+						<state>
+							<image />
+							<description>The curtain is open</description>
+							<get>No</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+						<state>
+							<image />
+							<description>The curtain is closed</description>
+							<get>No</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+			</items>
+		</room>
+		<room id="4" name="Bedroom">
+			<adjacentrooms>
+				<id>2</id>
+			</adjacentrooms>
+			<states>
+				<state>
+					<image>bedr</image>
+					<description>Normally a safe place, that feeling's now perverted and you feel worse here than anywhere else. Might be the abominable decor, but who's to say?</description>
+					<prerequisites>
+					</prerequisites>
+				</state>
+			</states>
+			<items>
+				<item name="Bed">
+					<index>50</index>
+					<states>
+						<state>
+							<image />
+							<description>You could hide under the covers and cower in fear...</description>
+							<get>No</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Closet">
+					<index>51</index>
+					<states>
+						<state>
+							<image />
+							<description>Wow, what a big closet for so few things. Actually, there's just one. It's a flashlight.</description>
+							<get>No</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Flashlight">
+					<index>52</index>
+					<states>
+						<state>
+							<image />
+							<description>Lights up</description>
+							<get>No</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Door">
+					<index>53</index>
+					<states>
+						<state>
+							<image />
+							<description>Leads to the hallway.</description>
+							<get>No</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Painting">
+					<index>54</index>
+					<states>
+						<state>
+							<image />
+							<description>You stare blankly at the art, pretending to understand it.</description>
+							<get>No</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>	
+				<item name="Safe">
+					<index>55</index>
+					<states>
+						<state>
+							<image />
+							<description>Inside is a few important items including the pistol you bought. If only you could remember the damn combination.</description>
+							<get>No</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>	
+				<item name="Trophy Case">
+					<index>56</index>
+					<states>
+						<state>
+							<image />
+							<description>All of your trophies from marksmanship competitions live here. Plenty of participation and honorable mentions.</description>
+							<get>There's too much glass in the way.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>		
+				<item name="Tape Recorder">
+					<index>57</index>
+					<states>
+						<state>
+							<image />
+							<description>For recording things!</description>
+							<get>No.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="Gun">
+					<index>58</index>
+					<states>
+						<state>
+							<image />
+							<description>For shooting!</description>
+							<get>No.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>				
+			</items>
+		</room>
+		<room id="5" name="Basement">
+			<adjacentrooms>
+				<id>1</id>
+			</adjacentrooms>
+			<states>
+				<state>
+					<image>bm</image>
+					<description>The low light of the basement reveals piled boxes, a tool bench, and the washer and dryer. For a moment you have an insane desire to grab your clothes out of the dryer and start acting as though nothing is wrong.</description>
+					<prerequisites>						
+					</prerequisites>
+				</state>
+			</states>
+			<items>
+				<item name="staircase">
+					<index>61</index>
+					<states>
+						<state>
+							<image />
+							<description>The staircase leading up from the basement</description>
+							<get>No.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="washer">
+					<index>62</index>
+					<states>
+						<state>
+							<image />
+							<description>for washin</description>
+							<get>No.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="dryer">
+					<index>63</index>
+					<states>
+						<state>
+							<image />
+							<description>for dryin</description>
+							<get>No.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="gas can">
+					<index>64</index>
+					<states>
+						<state>
+							<image>gascan</image>
+							<description>for gasin'</description>
+							<get>You gas up.</get>
+							<gettable>1</gettable>
+							<actions>
+							</actions>
+						</state>
+						<state>
+							<image />
+							<description />
+							<get>You already gassed up.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>					
+				<item name="ammonia">
+					<index>65</index>
+					<states>
+						<state>
+							<image />
+							<description>It's ammonia, I don't fucking know, read a book asshole.</description>
+							<get>You grab the ammonia.</get>
+							<gettable>1</gettable>
+							<actions>
+							</actions>
+						</state>
+						<state>
+							<image />
+							<description />
+							<get>You did that already.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>	
+				<item name="workbench">
+					<index>66</index>
+					<states>
+						<state>
+							<image>workbench</image>
+							<description>Works good.</description>
+							<get>No.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>	
+				<item name="pinata">
+					<index>67</index>
+					<states>
+						<state>
+							<image />
+							<description>This looks like some idiot.</description>
+							<get>Maybe this will be good for something besides diabetes.</get>
+							<gettable>1</gettable>
+							<actions>
+							</actions>
+						</state>
+						<state>
+							<image />
+							<description />
+							<get>Type I diabetes is plenty, let's not go for Type II.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="light">
+					<index>68</index>
+					<states>
+						<state>
+							<image>light</image>
+							<description>Works good.</description>
+							<get>No.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>					
+			</items>
+		</room>
+		<room id="6" name="Secret Lair">
+			<adjacentrooms>
+				<id>0</id>
+			</adjacentrooms>
+			<states>
+				<state>
+					<image>sl</image>
+					<description>It's a secret.</description>
+					<prerequisites>						
+					</prerequisites>
+				</state>
+			</states>
+			<items>
+				<item name="living room door">
+					<index>69</index>
+					<states>
+						<state>
+							<image />
+							<description>Living Room door.</description>
+							<get>No.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="outside door">
+					<index>70</index>
+					<states>
+						<state>
+							<image />
+							<description>Outside door.</description>
+							<get>No.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>	
+				<item name="computer">
+					<index>71</index>
+					<states>
+						<state>
+							<image />
+							<description>Beep Boop.</description>
+							<get>No.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="suits">
+					<index>72</index>
+					<states>
+						<state>
+							<image />
+							<description>I guess even maniacs don't want to wear the same thing every day.</description>
+							<get>What you've got on is just...good enough.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="table">
+					<index>73</index>
+					<states>
+						<state>
+							<image />
+							<description>A metal table covered in various surgical tools and items. Specifically, a scalpel, a pair of scissors, and a spoon.</description>
+							<get>What do you want to get?</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="scalpel">
+					<index>74</index>
+					<states>
+						<state>
+							<image />
+							<description>Sharp.</description>
+							<get>You deftly nab the scalpel.</get>
+							<gettable>1</gettable>
+							<actions>
+							</actions>
+						</state>
+						<state>
+							<image />
+							<description />
+							<get>You already grabbed it!</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="scissors">
+					<index>75</index>
+					<states>
+						<state>
+							<image />
+							<description>Probably used for something distasteful. Or for cutting out paper hearts.</description>
+							<get>You grab the snip-snips</get>
+							<gettable>1</gettable>
+							<actions>
+							</actions>
+						</state>
+						<state>
+							<image />
+							<description />
+							<get>Already got 'em.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="spoon">
+					<index>76</index>
+					<states>
+						<state>
+							<image />
+							<description>For cereals and soups.</description>
+							<get>You scoop up the scooper.</get>
+							<gettable>1</gettable>
+							<actions>
+							</actions>
+						</state>
+						<state>
+							<image />
+							<description />
+							<get>You have ENOUGH spoons already.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>			
+			</items>
+		</room>
+		<room id="7" name="backyard">
+			<adjacentrooms>
+				<id>1</id>
+				<id>8</id>
+			</adjacentrooms>
+			<states>
+				<state>
+					<image>outside</image>
+					<description>It's your back yard! There's a shed and the back door to your house.</description>
+					<prerequisites>						
+					</prerequisites>
+				</state>
+			</states>
+			<items>
+				<item name="shed">
+					<index>77</index>
+					<states>
+						<state>
+							<image />
+							<description>A big old shed.</description>
+							<get>2 big.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="shed door">
+					<index>83</index>
+					<states>
+						<state>
+							<image />
+							<description>There is a lock on the outside of the shack; you might be able to trap the intruder in there, if you could find a way to lure him in.</description>
+							<get>NO</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="back door">
+					<index>78</index>
+					<states>
+						<state>
+							<image />
+							<description>The door back to your house.</description>
+							<get>NO</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="door">
+					<index>60</index>
+					<states>
+						<state>
+							<image />
+							<description>You'll have to be a bit more specific. There's the back door and the shed door.</description>
+							<get>no</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+			</items>
+		</room>
+		<room id="8" name="shed">
+			<adjacentrooms>
+				<id>7</id>
+			</adjacentrooms>
+			<states>
+				<state>
+					<image>shed</image>
+					<description>THE SHED</description>
+					<prerequisites>						
+					</prerequisites>
+				</state>
+			</states>
+			<items>
+				<item name="bike">
+					<index>79</index>
+					<states>
+						<state>
+							<image />
+							<description>biek.</description>
+							<get>This thing is much too beat up to try and use now. Besides, what would you do with it - pedal away from the killer?</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="tarp">
+					<index>80</index>
+					<states>
+						<state>
+							<image />
+							<description>Big and plastic</description>
+							<get>This thing crinkles and makes a ton of noise when you move it, so you decide you shouldn't carry it around through the house. You might find some use for it in here though.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>
+				<item name="hose">
+					<index>81</index>
+					<states>
+						<state>
+							<image />
+							<description>A wet noodle</description>
+							<get>You open the valve but only a pathetic trickle of water dribbles from the end. Useless.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>	
+				<item name="rake">
+					<index>82</index>
+					<states>
+						<state>
+							<image />
+							<description>For leaves</description>
+							<get>It's too unwieldy to carry around with you, but maybe you can use it with something else in here.</get>
+							<gettable>0</gettable>
+							<actions>
+							</actions>
+						</state>
+					</states>
+				</item>					
+			</items>
+		</room>
+	</rooms>
+	<specialresponses>
+		<specialresponse>
+			<itemindex>10</itemindex>
+			<image>phone3</image>
+			<command>Read</command>
+			<response>The book contains these entries (All numbers are Speed-dial):
+Paulie's Pizza..................1<br />
+Ms. Jones from Next Door........2<br />
+Phillip Glean's Free Screams....3<br />
+911.............................4
+			</response>
+			<itemstate>1</itemstate>
+			<actions>
+			</actions>
+		</specialresponse>
+		<specialresponse>
+			<itemindex>7</itemindex>
+			<image />
+			<command>Use</command>
+			<response>Well, okay. You spread ignition fluid over the logs, glancing back to the front door while your heart races. You duck your head and climb into the soot-covered hole, balancing yourself delicately on the logs. As you strike the match, you briefly see the blackened bricks around you before you drop the match to your feet. As you burn, you grimly think, "at least I died on my own terms."</response>
+			<itemstate>0</itemstate>
+			<actions>
+				<action>
+					<item>-1</item>
+					<itemstate>100</itemstate>
+				</action>
+			</actions>
+		</specialresponse>
+		<specialresponse>
+			<itemindex>11</itemindex>
+			<image>phone4</image>
+			<command>Call</command>
+			<response>The phone rings just once before a gruff, loud voice barks "Paulie's Pizza, whaddya want?" "Paulie, it's me, I need help!", you hurriedly exclaim. Paulie, recognizing your voice immediately, says, "Oh, it's you. Your usual will be there in 30 minutes," before hanging up. Great! Maybe now you can die with a full stomach at least.</response>
+			<itemstate>0</itemstate>
+			<actions>
+				<action>
+					<item>11</item>
+					<itemstate>1</itemstate>
+				</action>
+				<action>
+					<item>12</item>
+					<itemstate>1</itemstate>
+				</action>
+				<action>
+					<item>13</item>
+					<itemstate>1</itemstate>
+				</action>
+				<action>
+					<item>14</item>
+					<itemstate>1</itemstate>
+				</action>
+			</actions>
+		</specialresponse>
+		<specialresponse>
+			<itemindex>12</itemindex>
+			<image>phone4</image>
+			<command>Call</command>
+			<response>IT'S MRS. JONES</response>
+			<itemstate>0</itemstate>
+			<actions>
+				<action>
+					<item>11</item>
+					<itemstate>1</itemstate>
+				</action>
+				<action>
+					<item>12</item>
+					<itemstate>1</itemstate>
+				</action>
+				<action>
+					<item>13</item>
+					<itemstate>1</itemstate>
+				</action>
+				<action>
+					<item>14</item>
+					<itemstate>1</itemstate>
+				</action>
+			</actions>
+		</specialresponse>
+		<specialresponse>
+			<itemindex>13</itemindex>
+			<image>phone4</image>
+			<command>Call</command>
+			<response>When the line connects, all that can be heard is a single, unbroken, bloodcurdling scream. Man, you can always count on Phil.</response>
+			<itemstate>0</itemstate>
+			<actions>
+				<action>
+					<item>11</item>
+					<itemstate>1</itemstate>
+				</action>
+				<action>
+					<item>12</item>
+					<itemstate>1</itemstate>
+				</action>
+				<action>
+					<item>13</item>
+					<itemstate>1</itemstate>
+				</action>
+				<action>
+					<item>14</item>
+					<itemstate>1</itemstate>
+				</action>
+			</actions>
+		</specialresponse>
+		<specialresponse>
+			<itemindex>14</itemindex>
+			<image>phone4</image>
+			<command>Call</command>
+			<response>The phone rings once or twice and a curt woman answers, "9-1-1, what's your emergency?" You quickly explain that a maniac is trying to break into your home and murder you. The operator is taken aback for a moment, but calmly tells you, "Remain in your home, officers will be there in 20 minutes."</response>
+			<itemstate>0</itemstate>
+			<actions>
+				<action>
+					<item>11</item>
+					<itemstate>1</itemstate>
+				</action>
+				<action>
+					<item>12</item>
+					<itemstate>1</itemstate>
+				</action>
+				<action>
+					<item>13</item>
+					<itemstate>1</itemstate>
+				</action>
+				<action>
+					<item>14</item>
+					<itemstate>1</itemstate>
+				</action>
+			</actions>
+		</specialresponse>
+		<specialresponse>
+			<itemindex>16</itemindex>
+			<image>phone2</image>
+			<command>Open</command>
+			<response>You open the Drawer.</response>
+			<itemstate>0</itemstate>
+			<actions>
+				<action>
+					<item>16</item>
+					<itemstate>1</itemstate>
+				</action>
+				<action>
+					<item>1</item>
+					<itemstate>1</itemstate>
+				</action>
+			</actions>
+		</specialresponse>
+		<specialresponse>
+			<itemindex>16</itemindex>
+			<image>Phone</image>
+			<command>Close</command>
+			<response>You close the Drawer.</response>
+			<itemstate>1</itemstate>
+			<actions>
+				<action>
+					<item>16</item>
+					<itemstate>0</itemstate>
+				</action>
+				<action>
+					<item>1</item>
+					<itemstate>0</itemstate>
+				</action>
+			</actions>
+		</specialresponse>
+		<specialresponse>
+			<itemindex>25</itemindex>
+			<image />
+			<command>Open</command>
+			<response>You open the fridge.</response>
+			<itemstate>0</itemstate>
+			<actions>
+				<action>
+					<item>25</item>
+					<itemstate>1</itemstate>
+				</action>
+			</actions>
+		</specialresponse>
+		<specialresponse>
+			<itemindex>25</itemindex>
+			<image />
+			<command>Close</command>
+			<response>You close the fridge.</response>
+			<itemstate>1</itemstate>
+			<actions>
+				<action>
+					<item>25</item>
+					<itemstate>0</itemstate>
+				</action>
+			</actions>
+		</specialresponse>
+		<specialresponse>
+			<itemindex>26</itemindex>
+			<image />
+			<command>Open</command>
+			<response>You open the freezer.</response>
+			<itemstate>0</itemstate>
+			<actions>
+				<action>
+					<item>26</item>
+					<itemstate>1</itemstate>
+				</action>
+				<action>
+					<item>27</item>
+					<itemstate>1</itemstate>
+				</action>
+				<action>
+					<item>28</item>
+					<itemstate>1</itemstate>
+				</action>
+			</actions>
+		</specialresponse>
+		<specialresponse>
+			<itemindex>26</itemindex>
+			<image />
+			<command>Close</command>
+			<response>You close the freezer.</response>
+			<itemstate>1</itemstate>
+			<actions>
+				<action>
+					<item>26</item>
+					<itemstate>0</itemstate>
+				</action>
+				<action>
+					<item>27</item>
+					<itemstate>0</itemstate>
+				</action>
+				<action>
+					<item>28</item>
+					<itemstate>0</itemstate>
+				</action>
+			</actions>
+		</specialresponse>
+		<specialresponse>
+			<itemindex>30</itemindex>
+			<image />
+			<command>Open</command>
+			<response>You open the cabinet.</response>
+			<itemstate>0</itemstate>
+			<actions>
+				<action>
+					<item>30</item>
+					<itemstate>1</itemstate>
+				</action>
+				<action>
+					<item>31</item>
+					<itemstate>1</itemstate>
+				</action>
+			</actions>
+		</specialresponse>
+		<specialresponse>
+			<itemindex>30</itemindex>
+			<image />
+			<command>Close</command>
+			<response>You close the cabinet.</response>
+			<itemstate>1</itemstate>
+			<actions>
+				<action>
+					<item>30</item>
+					<itemstate>0</itemstate>
+				</action>
+				<action>
+					<item>31</item>
+					<itemstate>0</itemstate>
+				</action>
+			</actions>
+		</specialresponse>
+		<specialresponse>
+			<itemindex>3</itemindex>
+			<image />
+			<command>Move</command>
+			<response>You move the arm chair.</response>
+			<itemstate>0</itemstate>
+			<actions>
+				<action>
+					<item>3</item>
+					<itemstate>1</itemstate>
+				</action>
+			</actions>
+		</specialresponse>
+		<specialresponse>
+			<itemindex>17</itemindex>
+			<image />
+			<command>Read</command>
+			<response>As you tilt the book to grab it, THE PASSAGE OPENS WOO WOO WOO!</response>
+			<itemstate>0</itemstate>
+			<actions>
+				<action>
+					<item>7</item>
+					<itemstate>1</itemstate>
+				</action>
+				<action>
+					<item>17</item>
+					<itemstate>1</itemstate>
+				</action>
+			</actions>
+		</specialresponse>
+	</specialresponses>
+	<commands>
+		<command>Look</command>
+		<command>Move</command>
+		<command>Get</command>
+		<command>Use</command>
+	</commands>
+</house>

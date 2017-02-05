@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<altnamedoc>
+	<altnames>
+		<altname>
+			<real>arm chair</real>
+			<alts>
+				<alt>chair</alt>
+			</alts>
+		</altname>
+		<altname>
+			<real>refrigerator</real>
+			<alts>
+				<alt>fridge</alt>
+			</alts>
+		</altname>
+		<altname>
+			<real>stove</real>
+			<alts>
+				<alt>stovetop</alt>
+				<alt>stove top</alt>
+			</alts>
+		</altname>
+		<altname>
+			<real>2</real>
+			<alts>
+				<alt>upstairs</alt>			
+			</alts>
+
+		</altname>
+		<altname>
+			<real>1</real>
+			<alts>
+				<alt>upstairs</alt>		
+			</alts>
+		</altname>
+		<altname>
+			<real>5</real>
+			<alts>
+				<alt>downstairs</alt>		
+			</alts>
+		</altname>
+		<altname>
+			<real>0</real>
+			<alts>
+				<alt>downstairs</alt>		
+			</alts>
+		</altname>
+		<altname>
+			<real>7</real>
+			<alts>
+				<alt>outside</alt>		
+			</alts>
+		</altname>
+		<altname>
+			<real>6</real>
+			<alts>
+				<alt>lair</alt>		
+			</alts>
+		</altname>
+	</altnames>
+</altnamedoc>
