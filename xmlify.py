@@ -62,6 +62,16 @@ class NameSpec:
     _idsearch = lambda: (attr_lookup("id"), elt_lookup(
         "id"), attr_lookup("index"), elt_lookup("index"))
 
+    def intname(self):
+        try:
+            int(self.name)
+        except TypeError:
+            return False
+        except ValueError:
+            return False
+        
+        return True
+
     def _invalid(self):
         raise ValueError(f"{self.__class__.__name__} from {self._sourceline} is missing a name AND id")
 
@@ -192,7 +202,7 @@ class State:
             x = E.state()
             x.set(k, v)
 
-        kwargs = dict(image=self.image)
+        kwargs = dict(image=(self.image if self.image is not None else ""))
         elts = [E.description(self.description)]
 
         if self.gettable is not None:
@@ -213,6 +223,8 @@ class Item:
     name = attr.ib()
     states = attr.ib()
 
+    _sourceline = attr.ib(default=None)
+
     @classmethod
     def from_xelt(cls, elt, index=None):
         name = NameSpec.from_xelt(elt)
@@ -223,14 +235,15 @@ class Item:
         states = [State.from_xelt(x, idx)
                   for idx, x in enumerate(elt.find('states'))]
 
-        return cls(name, states)
+        return cls(name, states, elt.sourceline)
 
     def to_xelt(self):
-        name = str(self.name)
-        if use_tag_name and ' ' not in name:
-            x = etree.Element(name)
+        if use_tag_name and not self.name.intname() and ' ' not in self.name.name:
+            x = etree.Element(self.name.name)
         else:
-            x = E.item(name=name)
+            k, v = self.name.to_xattr()
+            x = E.item()
+            x.set(k, v)
 
         x.append(E.states(*[x.to_xelt() for x in self.states]))
         return x
@@ -261,11 +274,11 @@ class Room:
         else:
             x = E.room(name=name)
         
-        x.extend(
+        x.extend([
             E.adjacentrooms(*[x.to_xelt() for x in self.adjacent_rooms]),
             E.states(*[x.to_xelt() for x in self.states]),
             E.items(*[x.to_xelt() for x in self.items])
-        )
+        ])
 
         return x
 
@@ -302,12 +315,15 @@ class SpecialResponse:
         return cls(item, image, command, response, item_state, actions)
 
     def to_xelt(self):
+        response =  E.response()
+        if self.response is not None:
+            response.text = self.response
         return E.specialresponse(
-            E.response(self.response),
+            response,
             E.actions(*[x.to_xelt() for x in self.actions]),
 
             item=str(self.item),
-            state=str(item_state),
+            state=str(self.item_state),
             image=self.image,
             command=self.command
         )
@@ -315,7 +331,7 @@ class SpecialResponse:
 @attr.s
 class House:
     rooms = attr.ib()
-    special_repsonses = attr.ib()
+    special_responses = attr.ib()
 
     @classmethod
     def from_xelt(cls, elt):
@@ -332,7 +348,7 @@ class House:
 
 
 def minify(instr, pretty=True) -> str:
-    return etree.tostring(House.from_xelt(etree.fromstring(instr)).to_xelt(), pretty)
+    return str(etree.tostring(House.from_xelt(etree.fromstring(instr)).to_xelt(), pretty_print=pretty), encoding="UTF-8")
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
