@@ -5,6 +5,12 @@ using System.Linq;
 using System.IO;
 using X = XElementExtensions;
 
+struct ValidationIssue {
+    public int lineNum;
+    public int linePos;
+    public string issue;
+}
+
 /// <summary>
 /// Something that was originally identified by an ID, but should have a name instead.
 /// Things that have names themselves should use this. If you're attemtping to reference
@@ -15,9 +21,10 @@ class NameSpec
     public int? id;
     public string name;
 
+    public XElement elt;
+
     private static readonly string[] idNames = new string[] { "id", "index" };
 
-    private static readonly string[] nameNames = new string[] { "name" };
     public static implicit operator XAttribute(NameSpec self)
     {
         if (self.name == null)
@@ -337,7 +344,7 @@ public class Program
 {
     public static void Main(string[] args)
     {
-        XElement houseXML = XElement.Load("house.xml");
+        XElement houseXML = XElement.Load("house.xml", LoadOptions.SetLineInfo);
         House house = House.Parse(houseXML);
         XElement reducedXML = (XElement)house;
 
