@@ -366,8 +366,5 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     sourcelen, out, outlen = minify(args.infile.read())
-    print(f"""
-    Input length: {sourcelen} lines
-    Output length: {outlen} lines
-    """, file=sys.stderr)
+    print(f"Input length: {sourcelen} lines\nOutput length: {outlen} lines", file=sys.stderr)
     print(out)
