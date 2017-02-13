@@ -1,0 +1,994 @@
+<house>
+  <rooms>
+    <room name="living room">
+      <adjacentrooms>
+        <room id="1"/>
+        <room id="2"/>
+        <room id="6"/>
+      </adjacentrooms>
+      <states>
+        <state id="0" image="">
+          <description>This is where you might entertain friends...if you had any. The room is dimly lit by a lamp and the weak, jittering light of the fireplace. You see a comfy, albeit slightly moldy, arm chair facing the fireplace; your phone atop a spindly table; and a bookcase full of books you've skimmed. There is the front door, a window, the door to the kitchen, and a staircase leading to the second floor.</description>
+          <prereq item="3" state="0"/>
+          <prereq item="7" state="0"/>
+          <prereq item="15" state="0"/>
+        </state>
+        <state id="1" image="">
+          <description>This is where you might entertain friends...if you had any. The room is dimly lit by a lamp and the weak, jittering light of the fireplace. You see a comfy, albeit slightly moldy, arm chair facing the fireplace; your phone atop a spindly table; and a bookcase full of books you've skimmed. There is the front door, a window, the door to the kitchen, and a staircase leading to the second floor.</description>
+          <prereq item="3" state="1"/>
+          <prereq item="7" state="0"/>
+          <prereq item="15" state="0"/>
+        </state>
+        <state id="2" image="">
+          <description>This is where you might entertain friends...if you had any. The room is dimly lit by a lamp and the weak, jittering light of the fireplace. You see a comfy, albeit slightly moldy, arm chair facing the fireplace; your phone atop a spindly table; and a bookcase full of books you've skimmed. There is the front door, a window, the door to the kitchen, and a staircase leading to the second floor.</description>
+          <prereq item="3" state="0"/>
+          <prereq item="7" state="0"/>
+          <prereq item="15" state="1"/>
+        </state>
+        <state id="3" image="">
+          <description>This is where you might entertain friends...if you had any. The room is dimly lit by a lamp and the weak, jittering light of the fireplace. You see a comfy, albeit slightly moldy, arm chair facing the fireplace; your phone atop a spindly table; and a bookcase full of books you've skimmed. There is the front door, a window, the door to the kitchen, and a staircase leading to the second floor.</description>
+          <prereq item="3" state="1"/>
+          <prereq item="7" state="0"/>
+          <prereq item="15" state="1"/>
+        </state>
+        <state id="4" image="">
+          <description>This is where you might entertain friends...if you had any. The room is dimly lit by a lamp and the weak, jittering light of the fireplace. You see a comfy, albeit slightly moldy, arm chair facing the fireplace; your phone atop a spindly table; and a bookcase full of books you've skimmed. There is the front door, a window, the door to the kitchen, and a staircase leading to the second floor.</description>
+          <prereq item="3" state="1"/>
+          <prereq item="7" state="1"/>
+          <prereq item="15" state="0"/>
+        </state>
+        <state id="5" image="">
+          <description>This is where you might entertain friends...if you had any. The room is dimly lit by a lamp and the weak, jittering light of the fireplace. You see a comfy, albeit slightly moldy, arm chair facing the fireplace; your phone atop a spindly table; and a bookcase full of books you've skimmed. There is the front door, a window, the door to the kitchen, and a staircase leading to the second floor.</description>
+          <prereq item="3" state="0"/>
+          <prereq item="7" state="1"/>
+          <prereq item="15" state="0"/>
+        </state>
+        <state id="6" image="">
+          <description>This is where you might entertain friends...if you had any. The room is dimly lit by a lamp and the weak, jittering light of the fireplace. You see a comfy, albeit slightly moldy, arm chair facing the fireplace; your phone atop a spindly table; and a bookcase full of books you've skimmed. There is the front door, a window, the door to the kitchen, and a staircase leading to the second floor.</description>
+          <prereq item="3" state="1"/>
+          <prereq item="7" state="1"/>
+          <prereq item="15" state="1"/>
+        </state>
+        <state id="7" image="">
+          <description>This is where you might entertain friends...if you had any. The room is dimly lit by a lamp and the weak, jittering light of the fireplace. You see a comfy, albeit slightly moldy, arm chair facing the fireplace; your phone atop a spindly table; and a bookcase full of books you've skimmed. There is the front door, a window, the door to the kitchen, and a staircase leading to the second floor.</description>
+          <prereq item="3" state="0"/>
+          <prereq item="7" state="1"/>
+          <prereq item="15" state="1"/>
+        </state>
+      </states>
+      <items>
+        <phone>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>Your beige connection to civilization is looking awfully inadequate right now. You know there is a mostly empty address book in a drawer in the table the phone sits upon.</description>
+            </state>
+            <state id="1" image="" gettable="True">
+              <description>Your beige connection to civilization is looking awfully inadequate right now. You can see your address book in the open drawer of the table that the phone sits on.</description>
+            </state>
+          </states>
+        </phone>
+        <window>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>A window that yawns a view to the dark front yard. You can just make out your mailbox under a flickering street lamp.</description>
+            </state>
+          </states>
+        </window>
+        <item name="arm chair">
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>Almost bursting at the seams from years of your curvy physique pressing upon it.</description>
+            </state>
+            <state id="1" image="" gettable="True">
+              <description>Now it's in front of the door!</description>
+            </state>
+          </states>
+        </item>
+        <Painting>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>Looks dumb</description>
+            </state>
+          </states>
+        </Painting>
+        <Peephole>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>Oh wow, looks like somebody's outside!</description>
+            </state>
+          </states>
+        </Peephole>
+        <Bookcase>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>So that you can pretend you're smarter to yourself, even though you know you've read none of them. You see such titles as: </description>
+            </state>
+          </states>
+        </Bookcase>
+        <Fireplace>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>A warm fire roars cozily in the old brick fireplace.</description>
+            </state>
+            <state id="1" image="" gettable="True">
+              <description>Secret passage open.</description>
+            </state>
+          </states>
+        </Fireplace>
+        <item name="Front Door">
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>Its dark wood looms ominously. There is a peep hole that you never thought you'd need to use.</description>
+            </state>
+          </states>
+        </item>
+        <Staircase>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>A plain white banister and stairs lead up to the second floor.</description>
+            </state>
+          </states>
+        </Staircase>
+        <item name="Address Book">
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>I don't see that.</description>
+            </state>
+            <state id="1" image="" gettable="True">
+              <description>The book contains these entries (All numbers are Speed-dial):
+Paulie's Pizza..................1</description>
+            </state>
+          </states>
+        </item>
+        <item name="1">
+          <states>
+            <state id="0" image="" gettable="True">
+              <description></description>
+            </state>
+            <state id="1" image="" gettable="True">
+              <description></description>
+            </state>
+          </states>
+        </item>
+        <item name="2">
+          <states>
+            <state id="0" image="" gettable="True">
+              <description></description>
+            </state>
+            <state id="1" image="" gettable="True">
+              <description></description>
+            </state>
+          </states>
+        </item>
+        <item name="3">
+          <states>
+            <state id="0" image="" gettable="True">
+              <description></description>
+            </state>
+            <state id="1" image="" gettable="True">
+              <description></description>
+            </state>
+          </states>
+        </item>
+        <item name="4">
+          <states>
+            <state id="0" image="" gettable="True">
+              <description></description>
+            </state>
+            <state id="1" image="" gettable="True">
+              <description></description>
+            </state>
+          </states>
+        </item>
+        <item name="lighter fluid">
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>For fires!</description>
+            </state>
+            <state id="1" image="" gettable="True">
+              <description></description>
+            </state>
+          </states>
+        </item>
+        <drawer>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>The Drawer. It's closed.</description>
+              <prereq item="10" state="0"/>
+            </state>
+            <state id="1" image="" gettable="True">
+              <description>The Drawer. It's open.</description>
+              <prereq item="10" state="1"/>
+            </state>
+          </states>
+        </drawer>
+        <item name="Book 1">
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>Looks like a book</description>
+            </state>
+            <state id="1" image="" gettable="True">
+              <description>WOW YOU OPENED THE PAPSSAGE WITH THIS OOOK.</description>
+            </state>
+          </states>
+        </item>
+        <item name="Book 2">
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>Looks like a book</description>
+            </state>
+          </states>
+        </item>
+        <item name="Book 3">
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>Looks like a book</description>
+            </state>
+          </states>
+        </item>
+        <item name="Book 4">
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>Looks like a book</description>
+            </state>
+          </states>
+        </item>
+        <lamp>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>Shines bright.</description>
+            </state>
+          </states>
+        </lamp>
+        <item name="kitchen door">
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>Door to the Kitchen</description>
+            </state>
+          </states>
+        </item>
+      </items>
+    </room>
+    <Kitchen>
+      <adjacentrooms>
+        <room id="0"/>
+        <room id="5"/>
+        <room id="7"/>
+      </adjacentrooms>
+      <states>
+        <state id="0" image="">
+          <description>This is where you push food into your mouth, sometimes after cooking it.  Stains and spills dot the floor, walls, and surfaces. In the center of the room is a counter where you usually prepare your food. On it rests a toaster, a blender, and a knife block. Standard kitchen appliances fill the room, like your refrigerator, sink, and a stovetop/oven. There is a door to the living room and a door leading to the back yard.</description>
+        </state>
+      </states>
+      <items>
+        <item name="Knife Block">
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>A knife block with 3 knives.</description>
+            </state>
+            <state id="1" image="" gettable="True">
+              <description>A knife block with 2 knives.</description>
+            </state>
+          </states>
+        </item>
+        <Knife>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>A knife.</description>
+            </state>
+            <state id="1" image="" gettable="True">
+              <description>I don't think it's in the room anymore</description>
+              <prereq item="22" state="1"/>
+            </state>
+          </states>
+        </Knife>
+        <item name="Back Door">
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>There are tiny slivers of grass illuminated by the light coming through the kitchen windows and doors. Beyond is impenetrable darkness.</description>
+            </state>
+          </states>
+        </item>
+        <Refrigerator>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>A plain, white, food-cooling box. A smiley-face magnet pins an "A+" math test to the front.</description>
+            </state>
+            <state id="1" image="" gettable="True">
+              <description>The fridge door is open.</description>
+            </state>
+          </states>
+        </Refrigerator>
+        <Freezer>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>Ah, the slightly colder sibling of the fridge. But I bet you knew that already.</description>
+            </state>
+            <state id="1" image="" gettable="True">
+              <description>The freezer door is open.</description>
+            </state>
+          </states>
+        </Freezer>
+        <item name="Ice Cube Trays">
+          <states>
+            <state id="0" image="" gettable="True">
+              <description></description>
+            </state>
+            <state id="1" image="" gettable="True">
+              <description>I think you used these once to make your favorite mixed drink, water on the rocks.</description>
+            </state>
+          </states>
+        </item>
+        <item name="Orange Juice">
+          <states>
+            <state id="0" image="" gettable="True">
+              <description></description>
+            </state>
+            <state id="1" image="" gettable="True">
+              <description>10% more orange!</description>
+            </state>
+            <state id="2" image="" gettable="True">
+              <description></description>
+            </state>
+          </states>
+        </item>
+        <Sink>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>Slightly grimy and mostly slimy. There's a cabinet under it.</description>
+            </state>
+          </states>
+        </Sink>
+        <Cabinet>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>It's the cabinet under the sink! And it's closed!</description>
+            </state>
+            <state id="1" image="" gettable="True">
+              <description>It's the cabinet under the sink! And it's open!</description>
+            </state>
+          </states>
+        </Cabinet>
+        <Bucket>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description></description>
+            </state>
+            <state id="1" image="" gettable="True">
+              <description>Bucket-y</description>
+            </state>
+          </states>
+        </Bucket>
+        <Stove>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>Where some of your most impressive water boiling has taken place. Also some of your most impressive ignoring burns to look cool (it's not cool). There's a lighter sitting on the top.</description>
+            </state>
+          </states>
+        </Stove>
+        <Oven>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>Where some of your REALLY impressive water boiling has taken place.</description>
+            </state>
+          </states>
+        </Oven>
+        <Toaster>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>Bread goes in, toast comes out. You could call it magic, but you would be wrong. You're often wrong.</description>
+            </state>
+            <state id="1" image="" gettable="True">
+              <description>Rest in pieces.</description>
+            </state>
+          </states>
+        </Toaster>
+        <Blender>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>Most recently used for impromptu bartending. Residue of Mountain Dew and Malibu covers the inside.</description>
+            </state>
+          </states>
+        </Blender>
+        <Counter>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>You know it's not illegal to clean up every once in awhile, right? Anyway, it's a big linoleum countertop. On it is a toaster, a blender, and a knife block.</description>
+            </state>
+          </states>
+        </Counter>
+        <Staircase>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>They lead to the basement.</description>
+            </state>
+          </states>
+        </Staircase>
+        <Lighter>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>For lighting stuff, ya know?</description>
+            </state>
+            <state id="1" image="" gettable="True">
+              <description></description>
+            </state>
+          </states>
+        </Lighter>
+      </items>
+    </Kitchen>
+    <Hallway>
+      <adjacentrooms>
+        <room id="0"/>
+        <room id="3"/>
+        <room id="4"/>
+      </adjacentrooms>
+      <states>
+        <state id="0" image="">
+          <description>To your left, the stairs to the first floor stretch down, ending in the door you'd like to get as far away from as possible. You see doors to the bathroom and bedroom. And a gas mask.</description>
+          <prereq item="41" state="0"/>
+        </state>
+        <state id="1" image="">
+          <description>To your left, the stairs to the first floor stretch down, ending in the door you'd like to get as far away from as possible. You see doors to the bathroom and bedroom.</description>
+          <prereq item="41" state="1"/>
+        </state>
+      </states>
+      <items>
+        <Staircase>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>They lead downstairs.</description>
+            </state>
+          </states>
+        </Staircase>
+        <item name="Bedroom Door">
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>The door to your bedroom.</description>
+            </state>
+          </states>
+        </item>
+        <item name="Bathroom Door">
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>The door to your bathroom.</description>
+            </state>
+          </states>
+        </item>
+        <item name="Gas Mask">
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>It's a gas mask!</description>
+            </state>
+            <state id="1" image="" gettable="True">
+              <description></description>
+            </state>
+          </states>
+        </item>
+      </items>
+    </Hallway>
+    <Bathroom>
+      <adjacentrooms>
+        <room id="2"/>
+      </adjacentrooms>
+      <states>
+        <state id="0" image="">
+          <description>Where you do all your poops!</description>
+          <prereq item="46" state="0"/>
+          <prereq item="49" state="0"/>
+        </state>
+        <state id="1" image="">
+          <description>Where you do all your poops!</description>
+          <prereq item="46" state="1"/>
+          <prereq item="49" state="0"/>
+        </state>
+        <state id="2" image="">
+          <description>Where you do all your poops!</description>
+          <prereq item="46" state="0"/>
+          <prereq item="49" state="1"/>
+        </state>
+        <state id="3" image="">
+          <description>Where you do all your poops!</description>
+          <prereq item="46" state="1"/>
+          <prereq item="49" state="1"/>
+        </state>
+      </states>
+      <items>
+        <Door>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>It's there so nobody can see you pooping.</description>
+            </state>
+          </states>
+        </Door>
+        <Sink>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>Nice. This baby's vintage. Faux-chrome, porcelain, uh, rustic...exterior...got some pipes there...functions without issue, mostly...look it's a sink. It's a fucking sink.</description>
+            </state>
+            <state id="1" image="" gettable="True">
+              <description>Nice. This baby's vintage. Faux-chrome, porcelain, uh, rustic...exterior...got some pipes there...functions without issue, mostly...look it's a sink. It's a fucking sink.</description>
+            </state>
+            <state id="2" image="" gettable="True">
+              <description>Nice. This baby's vintage. Faux-chrome, porcelain, uh, rustic...exterior...got some pipes there...functions without issue, mostly...look it's a sink. It's a fucking sink.</description>
+            </state>
+          </states>
+        </Sink>
+        <Toilet>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>This is where the magic happens.</description>
+            </state>
+            <state id="1" image="" gettable="True">
+              <description>This is where the magic happens.</description>
+            </state>
+          </states>
+        </Toilet>
+        <Cabinet>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>It's a cabinet! The door is closed.</description>
+            </state>
+            <state id="1" image="" gettable="True">
+              <description>It's a cabinet! The door is open.</description>
+            </state>
+          </states>
+        </Cabinet>
+        <Bleach>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>Don't drink it!</description>
+            </state>
+            <state id="1" image="" gettable="True">
+              <description></description>
+            </state>
+          </states>
+        </Bleach>
+        <Shower>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>This is where you would shower if you showered. You know, maybe you deserve this.</description>
+            </state>
+          </states>
+        </Shower>
+        <Curtain>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>The curtain is open</description>
+            </state>
+            <state id="1" image="" gettable="True">
+              <description>The curtain is closed</description>
+            </state>
+          </states>
+        </Curtain>
+      </items>
+    </Bathroom>
+    <Bedroom>
+      <adjacentrooms>
+        <room id="2"/>
+      </adjacentrooms>
+      <states>
+        <state id="0" image="">
+          <description>Normally a safe place, that feeling's now perverted and you feel worse here than anywhere else. Might be the abominable decor, but who's to say?</description>
+        </state>
+      </states>
+      <items>
+        <Bed>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>You could hide under the covers and cower in fear...</description>
+            </state>
+          </states>
+        </Bed>
+        <Closet>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>Wow, what a big closet for so few things. Actually, there's just one. It's a flashlight.</description>
+            </state>
+          </states>
+        </Closet>
+        <Flashlight>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>Lights up</description>
+            </state>
+          </states>
+        </Flashlight>
+        <Door>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>Leads to the hallway.</description>
+            </state>
+          </states>
+        </Door>
+        <Painting>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>You stare blankly at the art, pretending to understand it.</description>
+            </state>
+          </states>
+        </Painting>
+        <Safe>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>Inside is a few important items including the pistol you bought. If only you could remember the damn combination.</description>
+            </state>
+          </states>
+        </Safe>
+        <item name="Trophy Case">
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>All of your trophies from marksmanship competitions live here. Plenty of participation and honorable mentions.</description>
+            </state>
+          </states>
+        </item>
+        <item name="Tape Recorder">
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>For recording things!</description>
+            </state>
+          </states>
+        </item>
+        <Gun>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>For shooting!</description>
+            </state>
+          </states>
+        </Gun>
+      </items>
+    </Bedroom>
+    <Basement>
+      <adjacentrooms>
+        <room id="1"/>
+      </adjacentrooms>
+      <states>
+        <state id="0" image="">
+          <description>The low light of the basement reveals piled boxes, a tool bench, and the washer and dryer. For a moment you have an insane desire to grab your clothes out of the dryer and start acting as though nothing is wrong.</description>
+        </state>
+      </states>
+      <items>
+        <staircase>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>The staircase leading up from the basement</description>
+            </state>
+          </states>
+        </staircase>
+        <washer>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>for washin</description>
+            </state>
+          </states>
+        </washer>
+        <dryer>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>for dryin</description>
+            </state>
+          </states>
+        </dryer>
+        <item name="gas can">
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>for gasin'</description>
+            </state>
+            <state id="1" image="" gettable="True">
+              <description></description>
+            </state>
+          </states>
+        </item>
+        <ammonia>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>It's ammonia, I don't fucking know, read a book asshole.</description>
+            </state>
+            <state id="1" image="" gettable="True">
+              <description></description>
+            </state>
+          </states>
+        </ammonia>
+        <workbench>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>Works good.</description>
+            </state>
+          </states>
+        </workbench>
+        <pinata>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>This looks like some idiot.</description>
+            </state>
+            <state id="1" image="" gettable="True">
+              <description></description>
+            </state>
+          </states>
+        </pinata>
+        <light>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>Works good.</description>
+            </state>
+          </states>
+        </light>
+      </items>
+    </Basement>
+    <room name="Secret Lair">
+      <adjacentrooms>
+        <room id="0"/>
+      </adjacentrooms>
+      <states>
+        <state id="0" image="">
+          <description>It's a secret.</description>
+        </state>
+      </states>
+      <items>
+        <item name="living room door">
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>Living Room door.</description>
+            </state>
+          </states>
+        </item>
+        <item name="outside door">
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>Outside door.</description>
+            </state>
+          </states>
+        </item>
+        <computer>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>Beep Boop.</description>
+            </state>
+          </states>
+        </computer>
+        <suits>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>I guess even maniacs don't want to wear the same thing every day.</description>
+            </state>
+          </states>
+        </suits>
+        <table>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>A metal table covered in various surgical tools and items. Specifically, a scalpel, a pair of scissors, and a spoon.</description>
+            </state>
+          </states>
+        </table>
+        <scalpel>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>Sharp.</description>
+            </state>
+            <state id="1" image="" gettable="True">
+              <description></description>
+            </state>
+          </states>
+        </scalpel>
+        <scissors>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>Probably used for something distasteful. Or for cutting out paper hearts.</description>
+            </state>
+            <state id="1" image="" gettable="True">
+              <description></description>
+            </state>
+          </states>
+        </scissors>
+        <spoon>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>For cereals and soups.</description>
+            </state>
+            <state id="1" image="" gettable="True">
+              <description></description>
+            </state>
+          </states>
+        </spoon>
+      </items>
+    </room>
+    <backyard>
+      <adjacentrooms>
+        <room id="1"/>
+        <room id="8"/>
+      </adjacentrooms>
+      <states>
+        <state id="0" image="">
+          <description>It's your back yard! There's a shed and the back door to your house.</description>
+        </state>
+      </states>
+      <items>
+        <shed>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>A big old shed.</description>
+            </state>
+          </states>
+        </shed>
+        <item name="shed door">
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>There is a lock on the outside of the shack; you might be able to trap the intruder in there, if you could find a way to lure him in.</description>
+            </state>
+          </states>
+        </item>
+        <item name="back door">
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>The door back to your house.</description>
+            </state>
+          </states>
+        </item>
+        <door>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>You'll have to be a bit more specific. There's the back door and the shed door.</description>
+            </state>
+          </states>
+        </door>
+      </items>
+    </backyard>
+    <shed>
+      <adjacentrooms>
+        <room id="7"/>
+      </adjacentrooms>
+      <states>
+        <state id="0" image="">
+          <description>THE SHED</description>
+        </state>
+      </states>
+      <items>
+        <bike>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>biek.</description>
+            </state>
+          </states>
+        </bike>
+        <tarp>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>Big and plastic</description>
+            </state>
+          </states>
+        </tarp>
+        <hose>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>A wet noodle</description>
+            </state>
+          </states>
+        </hose>
+        <rake>
+          <states>
+            <state id="0" image="" gettable="True">
+              <description>For leaves</description>
+            </state>
+          </states>
+        </rake>
+      </items>
+    </shed>
+  </rooms>
+  <specialresponses>
+    <specialresponse item="10" state="1" image="phone3" command="Read">
+      <response/>
+      <actions/>
+    </specialresponse>
+    <specialresponse item="7" state="0" image="" command="Use">
+      <response/>
+      <actions>
+        <prereq item="-1" state="100"/>
+      </actions>
+    </specialresponse>
+    <specialresponse item="11" state="0" image="phone4" command="Call">
+      <response/>
+      <actions>
+        <prereq item="11" state="1"/>
+        <prereq item="12" state="1"/>
+        <prereq item="13" state="1"/>
+        <prereq item="14" state="1"/>
+      </actions>
+    </specialresponse>
+    <specialresponse item="12" state="0" image="phone4" command="Call">
+      <response/>
+      <actions>
+        <prereq item="11" state="1"/>
+        <prereq item="12" state="1"/>
+        <prereq item="13" state="1"/>
+        <prereq item="14" state="1"/>
+      </actions>
+    </specialresponse>
+    <specialresponse item="13" state="0" image="phone4" command="Call">
+      <response/>
+      <actions>
+        <prereq item="11" state="1"/>
+        <prereq item="12" state="1"/>
+        <prereq item="13" state="1"/>
+        <prereq item="14" state="1"/>
+      </actions>
+    </specialresponse>
+    <specialresponse item="14" state="0" image="phone4" command="Call">
+      <response/>
+      <actions>
+        <prereq item="11" state="1"/>
+        <prereq item="12" state="1"/>
+        <prereq item="13" state="1"/>
+        <prereq item="14" state="1"/>
+      </actions>
+    </specialresponse>
+    <specialresponse item="16" state="0" image="phone2" command="Open">
+      <response/>
+      <actions>
+        <prereq item="16" state="1"/>
+        <prereq item="1" state="1"/>
+      </actions>
+    </specialresponse>
+    <specialresponse item="16" state="1" image="Phone" command="Close">
+      <response/>
+      <actions>
+        <prereq item="16" state="0"/>
+        <prereq item="1" state="0"/>
+      </actions>
+    </specialresponse>
+    <specialresponse item="25" state="0" image="" command="Open">
+      <response/>
+      <actions>
+        <prereq item="25" state="1"/>
+      </actions>
+    </specialresponse>
+    <specialresponse item="25" state="1" image="" command="Close">
+      <response/>
+      <actions>
+        <prereq item="25" state="0"/>
+      </actions>
+    </specialresponse>
+    <specialresponse item="26" state="0" image="" command="Open">
+      <response/>
+      <actions>
+        <prereq item="26" state="1"/>
+        <prereq item="27" state="1"/>
+        <prereq item="28" state="1"/>
+      </actions>
+    </specialresponse>
+    <specialresponse item="26" state="1" image="" command="Close">
+      <response/>
+      <actions>
+        <prereq item="26" state="0"/>
+        <prereq item="27" state="0"/>
+        <prereq item="28" state="0"/>
+      </actions>
+    </specialresponse>
+    <specialresponse item="30" state="0" image="" command="Open">
+      <response/>
+      <actions>
+        <prereq item="30" state="1"/>
+        <prereq item="31" state="1"/>
+      </actions>
+    </specialresponse>
+    <specialresponse item="30" state="1" image="" command="Close">
+      <response/>
+      <actions>
+        <prereq item="30" state="0"/>
+        <prereq item="31" state="0"/>
+      </actions>
+    </specialresponse>
+    <specialresponse item="3" state="0" image="" command="Move">
+      <response/>
+      <actions>
+        <prereq item="3" state="1"/>
+      </actions>
+    </specialresponse>
+    <specialresponse item="17" state="0" image="" command="Read">
+      <response/>
+      <actions>
+        <prereq item="7" state="1"/>
+        <prereq item="17" state="1"/>
+      </actions>
+    </specialresponse>
+  </specialresponses>
+</house>
+

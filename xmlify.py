@@ -8,6 +8,7 @@ from typing import Iterable, Optional, Callable, List
 import itertools
 import functools
 import argparse
+import sys
 
 # TODO: support pure bi-directionality
 # TODO: check that the name / index dichotomy is handled
@@ -347,8 +348,16 @@ class House:
         )
 
 
-def minify(instr, pretty=True) -> str:
-    return str(etree.tostring(House.from_xelt(etree.fromstring(instr)).to_xelt(), pretty_print=pretty), encoding="UTF-8")
+
+def minify(instr, pretty=True) -> (int, str, int):
+    sourcelen = len(str(instr, encoding="UTF-8").split('\n'))
+    house = House.from_xelt(etree.fromstring(instr))
+    xml = house.to_xelt()
+    out = etree.tostring(xml, pretty_print=pretty)
+    out = str(out, encoding="UTF-8")
+    outlen = len(out.split('\n'))
+    return sourcelen, out, outlen
+    
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -356,4 +365,9 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
 
-    print(minify(args.infile.read()))
+    sourcelen, out, outlen = minify(args.infile.read())
+    print(f"""
+    Input length: {sourcelen} lines
+    Output length: {outlen} lines
+    """, file=sys.stderr)
+    print(out)
