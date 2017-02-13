@@ -1,7 +1,8 @@
-#!/usr/bin/env python3
+#!/usr/bin/env python3.6
 # pylint: skip-file
 import attr
 from lxml import etree
+from lxml.builder import E
 import typing
 from typing import Iterable, Optional, Callable, List
 import itertools
@@ -13,26 +14,23 @@ import argparse
 
 use_tag_name = True
 
-
-@attr.s
-class ValidationError:
-    source = attr.ib()
-    issue = attr.ib()
-
-
 Lookup = Callable[[etree._Element], Optional[str]]
 
 
 def attr_lookup(name: str) -> Lookup:
-    return functools.partialmethod(etree._Element.get, name)
+    return lambda x: x.get(name)
 
 
 def elt_lookup(name: str) -> Lookup:
-    return functools.partialmethod(etree._Element.findtext, name)
+    return lambda x: x.findtext(name)
 
 
 def attr_elt(name: str) -> (Lookup, Lookup):
     return (attr_lookup(name), elt_lookup(name))
+
+
+def self_lookup(elt) -> str:
+    return elt.text
 
 
 def do_lookup(elt: etree._Element, *lookups: Iterable[Lookup]) -> Optional[str]:
@@ -43,7 +41,7 @@ def do_int_lookup(elt, *lookups):
     for lookup in lookups:
         try:
             return int(lookup(elt))
-        except ValueError:
+        except TypeError:
             pass
 
     return None
@@ -52,17 +50,20 @@ def do_int_lookup(elt, *lookups):
 @attr.s
 class NameSpec:
     id = attr.ib(default=None)
-    name = attr.ib()
+    name = attr.ib(default=None)
 
     _sourceline = attr.ib(default=None)
 
     @classmethod
-    def name(cls):
+    def typename(cls):
         return cls.__name__[:-4].lower()
 
     _namesearch = lambda: (attr_lookup("name"), elt_lookup("name"))
     _idsearch = lambda: (attr_lookup("id"), elt_lookup(
         "id"), attr_lookup("index"), elt_lookup("index"))
+
+    def _invalid(self):
+        raise ValueError(f"{self.__class__.__name__} from {self._sourceline} is missing a name AND id")
 
     def __str__(self):
         if self.name is not None:
@@ -70,36 +71,38 @@ class NameSpec:
         elif self.id is not None:
             return str(self.id)
         else:
-            raise ValueError()
-
-    def validate(self) -> Iterable[ValidationError]:
-        if self.id is None and self.name is None:
-            return tuple(ValidationError(self._lineinfo, "Missing either an id or name"))
-        return tuple()
-
-    def to_xelt(self, type_name: Optional[str] = None) -> etree._Element:
-        if type_name is None:
-            return etree.Element(type_name, name=self.name)
+            self._invalid()
+    
+    def to_xattr(self) -> (str, str):
+        if self.name is not None:
+            return ("name", self.name)
+        elif self.id is not None:
+            return ("id", str(self.id))
         else:
-            return etree.Element(self.name)
+            self._invalid()
+
+    #def to_xelt(self, type_name: Optional[str] = None) -> etree._Element:
+    #    if type_name is None and ' ' not in self.name and use_tag_name:
+    #        return etree.Element(self.name)
+    #    else:
+    #        return etree.Element(type_name, name=self.name)
 
     @classmethod
     def from_xelt(cls, elt: etree._Element, *, idsearch=None, namesearch=None):
         id = do_int_lookup(elt, *(idsearch or cls._idsearch()))
         name = do_lookup(elt, *(namesearch or cls._namesearch()))
+
         return cls(id, name, elt.sourceline)
 
 
 class CustomSpec(NameSpec):
-
     @classmethod
     def _namesearch(cls):
-        return (attr_lookup(cls.name()), elt_lookup(cls.name()))
+        return (attr_lookup(cls.typename()), elt_lookup(cls.typename()))
 
     @classmethod
     def _idsearch(cls):
-        return (attr_lookup(cls.name()), elt_lookup(cls.name()))
-
+        return (attr_lookup(cls.typename()), elt_lookup(cls.typename()))
 
 class ItemSpec(CustomSpec):
     pass
@@ -110,7 +113,17 @@ class StateSpec(CustomSpec):
 
 
 class RoomSpec(CustomSpec):
-    pass
+    @classmethod
+    def _idsearch(cls):
+        return [self_lookup]
+
+    def to_xelt(self):
+        if use_tag_name and self.name is not None and ' ' not in self.name:
+            return etree.Element(self.name)
+
+        attrs = dict([self.to_xattr()])
+
+        return E.room(**attrs)
 
 
 @attr.s
@@ -126,7 +139,7 @@ class ConditionSpec:
         return cls(item, state)
 
     def to_xelt(self, type_name="prereq"):
-        return etree.Element(type_name, item=self.item, state=self.state)
+        return etree.Element(type_name, item=str(self.item), state=str(self.state))
 
 
 @attr.s
@@ -150,36 +163,48 @@ class State:
         prereqs = elt.find('prerequisites')
         actions = elt.find('actions')
 
-        if prereqs and actions:
+        if prereqs is not None and actions is not None:
             raise ValueError(
-                f"prereqs and actions both exist for elt at {elt.sourceline}")
+                f"prereqs and actions both exist for elt at {elt.sourceline}")  
 
-        conditions = [ConditionSpec.from_xelt(x) for x in (prereqs or actions)]
+        if prereqs is not None:
+            conditions = prereqs
+        elif actions is not None:
+            conditions = actions
+        else:
+            raise ValueError(f"both prereqs and actions are missing at {elt.sourceline}")
+            
+
+        conditions = [ConditionSpec.from_xelt(x) for x in conditions]
 
         get = elt_lookup("get")(elt)
-        gettable = attr_elt("gettable")(elt)
+        gettable = do_lookup(elt, *attr_elt("gettable"))
         if gettable is not None:
             gettable = bool(gettable)
 
         return cls(name, image, description, conditions, get, gettable)
 
     def to_xelt(self):
-        name = str(self.name)
-        name = name if use_tag_name and ' ' not in name else "state"
+        if use_tag_name and self.name.name is not None and ' ' not in self.name.name:
+            x = etree.Element(self.name)
+        else:
+            k, v = self.name.to_xattr()
+            x = E.state()
+            x.set(k, v)
 
         kwargs = dict(image=self.image)
         elts = [E.description(self.description)]
 
-        if gettable is not None:
-            kwargs.update(gettable=self.gettable)
+        if self.gettable is not None:
+            kwargs.update(gettable=str(self.gettable))
 
-        if get is not None:
+        if self.get is not None:
             elts += E.get(self.get)
 
         elts += E.conditions(*[x.to_xelt() for x in self.conditions])
 
-        x = etree.Element(name, attrib=kwargs)
         x.extend(elts)
+        x.attrib.update(kwargs)
         return x
 
 
@@ -202,9 +227,11 @@ class Item:
 
     def to_xelt(self):
         name = str(self.name)
-        name = name if use_tag_name and ' ' not in name else "item"
+        if use_tag_name and ' ' not in name:
+            x = etree.Element(name)
+        else:
+            x = E.item(name=name)
 
-        x = etree.Element(name)
         x.append(E.states(*[x.to_xelt() for x in self.states]))
         return x
 
@@ -219,13 +246,28 @@ class Room:
     @classmethod
     def from_xelt(cls, elt: etree._Element):
         name = NameSpec.from_xelt(elt)
-        adjs = [RoomSpec.from_xelt(x) for x in elt.find("adjacentRooms")]
-        states = [RoomState.from_xelt(x, idx)
+        adjs = [RoomSpec.from_xelt(x)
+                for x in elt.find("adjacentrooms")]
+        states = [State.from_xelt(x, idx)
                   for idx, x in enumerate(elt.find("states"))]
         items = [Item.from_xelt(x, idx)
                  for idx, x in enumerate(elt.find("items"))]
         return cls(name, adjs, states, items)
 
+    def to_xelt(self):
+        name = str(self.name)
+        if use_tag_name and ' ' not in name:
+            x = etree.Element(name)
+        else:
+            x = E.room(name=name)
+        
+        x.extend(
+            E.adjacentrooms(*[x.to_xelt() for x in self.adjacent_rooms]),
+            E.states(*[x.to_xelt() for x in self.states]),
+            E.items(*[x.to_xelt() for x in self.items])
+        )
+
+        return x
 
 @attr.s
 class SpecialResponse:
@@ -238,7 +280,7 @@ class SpecialResponse:
 
     @classmethod
     def from_xelt(cls, elt):
-        item_index = do_int_lookups(elt, elt_lookup("itemindex"))
+        item_index = do_int_lookup(elt, elt_lookup("itemindex"))
 
         if item_index is not None:
             item = ItemSpec(id=item_index)
@@ -253,11 +295,11 @@ class SpecialResponse:
 
         statesearch = (attr_lookup("state"), elt_lookup("state"),
                        attr_lookup("itemstate"), elt_lookup("itemstate"))
-        item_state = StateSpec.from_xelt(elt, idsearch=idsearch)
+        item_state = StateSpec.from_xelt(elt, idsearch=statesearch)
 
         actions = [ConditionSpec.from_xelt(x) for x in elt.find("actions")]
 
-        return cls(item, image, command, response, statesearch, item_state, actions)
+        return cls(item, image, command, response, item_state, actions)
 
     def to_xelt(self):
         return E.specialresponse(
@@ -294,7 +336,7 @@ def minify(instr, pretty=True) -> str:
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("infile", type=argpare.FileType(), default='-')
+    parser.add_argument("infile", type=argparse.FileType('rb'), default='-')
 
     args = parser.parse_args()
 
